@@ -30,7 +30,7 @@ export function ArticlePreview({
           <Link to={`/profile/${username}`} className='author'>
             {username}
           </Link>
-          <span className='date'>{format(createdAt, 'PP')}</span>
+          <span className='date'>{createdAt}</span>
         </div>
         <button
           className={`btn btn-sm pull-xs-right ${favorited ? 'btn-primary' : 'btn-outline-primary'}`}

@@ -144,7 +144,7 @@ function ArticleAuthorInfo({
         <Link className='author' to={`/profile/${username}`}>
           {username}
         </Link>
-        <span className='date'>{format(createdAt, 'PP')}</span>
+        <span className='date'>{createdAt}</span>
       </div>
     </Fragment>
   );
@@ -373,7 +373,7 @@ function ArticleComment({
         <Link className='comment-author' to={`/profile/${username}`}>
           {username}
         </Link>
-        <span className='date-posted'>{format(createdAt, 'PP')}</span>
+        <span className='date-posted'>{createdAt}</span>
         {user.isSome() && user.unwrap().username === username && (
           <span className='mod-options'>
             <i
