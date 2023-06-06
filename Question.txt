@@ -9,10 +9,10 @@ Fix super-hard-level bug
   b6.
 
 Add features
-  f1. เพิ่ม Dropdown ให้เลือกได้ว่าจะแสดง Articles กี่ Articles ต่อ 1 หน้า
-  f2. ปรับหน้าหลักที่แสดง Articles ให้แสดงเป็น Table ที่ compact มากขึ้น เพื่อนให้แต่ละ Articles ใช้พื้นที่น้อยลงในการ Preview
+  ***** f1. เพิ่ม Dropdown ให้เลือกได้ว่าจะแสดง Articles กี่ Articles ต่อ 1 หน้า
+  f2. 
   f3. 
 
 Change Styling
-  s1.
+  **___ s1. ปรับหน้าหลักที่แสดง Articles ให้แสดงเป็น Table ที่ compact มากขึ้น เพื่อนให้แต่ละ Articles ใช้พื้นที่น้อยลงในการ Preview
   s2.
