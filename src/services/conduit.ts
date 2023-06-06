@@ -34,7 +34,7 @@ export async function login(email: string, password: string): Promise<Result<Use
     const { data } = await axios.post('users/login', { user: { email, password } });
 
     return Ok((data).user);
-  } catch ({ response: { data } }) {
+  } catch ({ response: { data } }: any) {
     return Err((data).errors);
   }
 }
@@ -57,7 +57,7 @@ export async function updateSettings(user: UserSettings): Promise<Result<User, G
     const { data } = await axios.put('user', user);
 
     return Ok((data).user);
-  } catch ({ data }) {
+  } catch ({ data }: any) {
     return Err((data).errors);
   }
 }
@@ -67,7 +67,7 @@ export async function signUp(user: UserForRegistration): Promise<Result<User, Ge
     const { data } = await axios.post('users', { user });
 
     return Ok((data).user);
-  } catch ({ response: { data } }) {
+  } catch ({ response: { data } }: any) {
     return Err((data).errors);
   }
 }
@@ -77,7 +77,7 @@ export async function createArticle(article: ArticleForEditor): Promise<Result<A
     const { data } = await axios.post('articles', { article });
 
     return Ok((data).article);
-  } catch ({ response: { data } }) {
+  } catch ({ response: { data } }: any) {
     return Err((data).errors);
   }
 }
@@ -92,7 +92,7 @@ export async function updateArticle(slug: string, article: ArticleForEditor): Pr
     const { data } = await axios.put(`articles/${slug}`, { article });
 
     return Ok((data).article);
-  } catch ({ response: { data } }) {
+  } catch ({ response: { data } }: any) {
     return Err((data).errors);
   }
 }
